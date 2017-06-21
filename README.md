@@ -19,4 +19,4 @@ Packer is a tool that allows you to create identical machine images using a sing
 
 https://atlas.hashicorp.com/help/intro/getting-started
 
-Atlas is used to host the definition of the machine image we are creating, and the outputs (the actual images), on nabels/xenial64 (https://atlas.hashicorp.com/nabels/boxes/xenial64/).
+Atlas is used to host the definition of the machine image we are creating, and the outputs (the actual images), on [nabels/xenial64](https://atlas.hashicorp.com/nabels/boxes/xenial64/).
