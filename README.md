@@ -1,4 +1,4 @@
-# packer-ubuntu-xenial64
+# nabels-xenial64
 
 This repository is based on the following repository:
 - https://github.com/cbednarski/packer-ubuntu
