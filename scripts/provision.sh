@@ -23,8 +23,7 @@ usermod -a -G sudo vagrant
 # Install vagrant key
 mkdir /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
-cd /home/vagrant/.ssh
-wget --no-check-certificate 'https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub' -O authorized_keys
+wget --no-check-certificate 'https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys
 chmod 600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant /home/vagrant/.ssh
 
@@ -44,7 +43,7 @@ apt-get install -y dkms
 
 # Install the VirtualBox guest additions
 VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
-VBOX_ISO=VBoxGuestAdditions_$VBOX_VERSION.iso
+VBOX_ISO=/home/vagrant/VBoxGuestAdditions_$VBOX_VERSION.iso
 mount -o loop $VBOX_ISO /mnt
 yes|sh /mnt/VBoxLinuxAdditions.run
 umount /mnt
